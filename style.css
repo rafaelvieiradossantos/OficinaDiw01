@@ -5,9 +5,7 @@
     padding: 0;
 }
 
-html {
-    /* border: .1rem solid #00ff22; */
-}
+
 
 body {
     /* border: .1rem solid #b12b2b; */
@@ -55,6 +53,41 @@ nav {
 main {
     /* border: .1rem solid purple; */
     flex: 1;
+    padding: .7rem;
+}
+.imagem{
+    width: 100%;
+}
+.cartao{
+    border: .2rem solid #ddd;
+    width: 12rem;
+    height: 16rem;
+    box-shadow: .5rem .5rem .3rem .03rem #eee;
+    padding: .5rem;
+}
+.titulo{
+    font-size:1.5rem;
+    font-weight:bold;
+    margin-top: .2rem;
+}
+.preco{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+    text-align: right;
+}
+.descricao{
+    margin-top:.2rem ;
+}
+.botao{
+    border:none;
+    border-radius: .5rem;
+    background-color: blue;
+    color: #eee;
+    width: 100%;
+    padding: .3rem .5rem;
+    margin-top: 1rem;
+    font-weight:bold;
 }
 
 footer {
