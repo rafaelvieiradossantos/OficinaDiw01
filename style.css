@@ -38,6 +38,18 @@ header {
     font-weight: bold;
 }
 
+.menu-hamburguer{
+    border: .1rem solid red;
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+}
+
 section {
     border: .1rem solid blue;
     display: flex;
