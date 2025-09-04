@@ -37,9 +37,13 @@ header {
     align-content: center;
     font-weight: bold;
 }
+.titulo{
+    /* border: .1rem solid greenyellow; */
+    flex: 1;
+}
 
 .menu-hamburguer{
-    border: .1rem solid red;
+    /* border: .1rem solid red; */
     width: 1.2rem;
     height: 1.2rem;
     padding: .5rem;
@@ -47,7 +51,24 @@ header {
     align-items: center;
     align-content: center;
     justify-content: center;
-    
+    border-radius: 100%;
+}
+
+.menu-hamburguer:hover{
+    background-color: #5e5e5e;
+}
+
+.menu-hamburguer:hover i{
+    color: #ddd;
+}
+
+.menu-hamburguer i:hover{
+    color: white;
+}
+
+.menu-hamburguer i{
+    color: #ccc;
+    font-size: 1.5rem;
 }
 
 section {
@@ -77,7 +98,7 @@ main {
     box-shadow: .5rem .5rem .3rem .03rem #eee;
     padding: .5rem;
 }
-.titulo{
+.titulo-cabecalho{
     font-size:1.5rem;
     font-weight:bold;
     margin-top: .2rem;
@@ -107,4 +128,10 @@ footer {
     background-color: black;
     color: #eee;
     height: 3rem;
+}
+
+@media(max-width: 576px){
+    .titulo-cabecalho{
+        opacity: 0;
+    }
 }
