@@ -3,7 +3,7 @@ const usuario = {
     "senha": "admin"
 };
 
-const dados = {
+const dados = [
     {"id": 1,
      "titulo": "Mobilidade Urbana em Belo Horizonte",
      "descricao": "A mobilidade urbana em Belo Horizonte é cara",
@@ -34,4 +34,4 @@ const dados = {
      "imagem:": "asset/festival.png"
         
     }
-};
+];
