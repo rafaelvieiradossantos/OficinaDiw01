@@ -5,10 +5,12 @@
     padding: 0;
 }
 
-
+html {
+    /* border: .1rem solid #0be474; */
+}
 
 body {
-    /* border: .1rem solid #b12b2b; */
+    /* border: .1rem solid #e40ba3; */
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -16,10 +18,10 @@ body {
 
 header {
     /* border: .1rem solid red; */
-    background-color: black;
+    background-color: rgb(36, 35, 35);
     color: #eee;
     height: 3rem;
-    padding: 0.7rem;
+    padding: .7rem;
     display: flex;
     align-items: center;
     align-content: center;
@@ -37,36 +39,37 @@ header {
     align-content: center;
     font-weight: bold;
 }
-.titulo-cabecalho{
-    /* border: .1rem solid greenyellow;  */
+
+.titulo-cabecalho {
+    /* border: .1rem solid greenyellow; */
     flex: 1;
 }
 
-.menu-hamburguer{
+.menu-hamburguer {
     /* border: .1rem solid red; */
+    border-radius: 100%;
     width: 1.2rem;
     height: 1.2rem;
-    padding: .5rem;
+    padding: .7rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    justify-content: center;
-    border-radius: 100%;
 }
 
-.menu-hamburguer:hover{
-    background-color: #5e5e5e;
+.menu-hamburguer:hover {
+    background-color: #3f3e3e;
 }
 
-.menu-hamburguer:hover i{
+.menu-hamburguer:hover i {
     color: #ddd;
 }
 
-.menu-hamburguer i:hover{
+.menu-hamburguer i:hover {
     color: white;
 }
 
-.menu-hamburguer i{
+.menu-hamburguer i {
     color: #ccc;
     font-size: 1.5rem;
 }
@@ -87,66 +90,71 @@ main {
     /* border: .1rem solid purple; */
     flex: 1;
     padding: .7rem;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
 }
-.imagem{
-    width: 100%;
-}
-.cartao{
+
+.cartao {
     border: .2rem solid #ddd;
     width: 12rem;
-    height: 16rem;
-    box-shadow: .5rem .5rem .3rem .03rem #eee;
+    height: 18rem;
+    box-shadow: .5rem .5rem .2rem .03rem #eee;
     padding: .5rem;
     margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
+.imagem {
+    width: 100%;
+}
 
-.titulo{
-    font-size:1.5rem;
-    font-weight:bold;
+.titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
     margin-top: .2rem;
 }
 
-.preco{
+.descricao {
+    margin-top: .5rem;
+}
+
+.preco {
     font-size: 1.5rem;
     font-weight: bold;
     color: green;
     text-align: right;
 }
-.descricao{
-    margin-top:.2rem ;
-}
-.botao{
-    border:none;
+
+.botao {
+    border: none;
     border-radius: .5rem;
     background-color: blue;
     color: #eee;
     width: 100%;
     padding: .3rem .5rem;
     margin-top: 1rem;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 footer {
     /* border: .1rem solid green; */
-    background-color: black;
+    background-color: rgb(36, 35, 35);
     color: #eee;
     height: 3rem;
+    padding: .7rem;
 }
 
-@media(max-width: 576px){
-    .titulo-cabecalho{
+@media(max-width: 576px) {
+    .titulo-cabecalho {
         opacity: 0;
     }
 
-    nav{
+    nav {
         display: none;
     }
 
-    main{
-        display:flex;
+    main {
+        display: flex;
+
     }
 }
