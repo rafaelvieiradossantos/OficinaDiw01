@@ -7,8 +7,13 @@ function verificarCredenciais(){
 
     if(emailinformado === email){
         alert("Email informado corretamente");
-
+        if(senhainformada === senha){
+            alert("Senha informada corretamente!");
+            window.location = "home.html";
+        }
+        else
+            alert("Senha informada incorretamente!");
     }
     else
-        alert("E-mail informado incorretamente");
+        alert("E-mail informado incorretamente!");
 }
