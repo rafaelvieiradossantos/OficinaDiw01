@@ -99,10 +99,21 @@ display:flex;
 color: #5e5e5e;
 padding: .7rem;
 background-color: #ddd;
+border-radius: .5rem;
 }
+
 .opcao:hover{
     box-shadow: 0rem .3rem .3rem .01rem #ccc;
+    border: .1rem solid #bbb;
 }
+
+.opcao:hover .rotulo{
+    text-align: right;
+}
+.opcao:hover .icone-final{
+    opacity: 1;
+}
+
 .icone-inicial{
     /* border: .1rem solid red; */
     margin-right: .5rem;
@@ -116,6 +127,8 @@ background-color: #ddd;
 .icone-final{
     /* border: .1rem solid red; */
     margin-left: .5rem;
+    opacity: 0;
+    transition: opacity .3s ease-in;
 }
 
 main {
