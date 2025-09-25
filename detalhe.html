@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhe da Noticia</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">R</div>
+        <h1 class="titulo-cabecalho">Meu Site</h1>
+        <div class="menu-hamburguer" onclick="alterarVisualizacao()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <div id="painel-de-detalhe" class="painel">
+
+            <script src="./bd.js"></script>
+
+            <script>
+                const params = new URLSearchParams(window.location.search);
+                const id = parseInt(params.get("id"));
+
+                const noticia = dados.find(item => item.id === id);
+
+                if(noticia){
+
+                }else{
+                    container.innerHtml = "<h2>Noticia não encontrada!</h2>"
+                }
+            </script>
+        </div>
+    </main>
+
+    <footer>&copy; Meu Site ❤️</footer>
+</body>
+</html>
