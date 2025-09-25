@@ -1,8 +1,8 @@
 let noticiasCarregadas = false;
 
-const container = document.getElementById("container");
-
 function lerNoticias(){
+    const container = document.getElementById("container");
+
     if(!noticiasCarregadas){
         carregarNoticias();
         noticiasCarregadas = true;
@@ -13,14 +13,15 @@ function lerNoticias(){
 }
 
 function carregarNoticias(){
+    const container = document.getElementById("container");
     dados.forEach (noticia => {
         const cartao = document.createElement('div');
 
         cartao.className = 'cartao';
 
         cartao.innerHTML = `
-        <img src="${noticia.imagem}"  alta = "${noticia.titulo}" class="imagem">
-        <section>
+        <img src="${noticia.imagem}" alt="${noticia.titulo}" class="imagem">
+        <section class="corpo-cartao">
             <h2 class="titulo-noticia-cartao">${noticia.titulo}</h2>
             <p>${noticia.categoria} - ${noticia.data}</p>
             <p class="descricao-noticia-cartao">${noticia.descricao}</p>
