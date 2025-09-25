@@ -157,24 +157,24 @@ main {
     width: 100%;
 }
 
-.titulo {
-    font-size: 1.5rem;
+.titulo-noticia-cartao {
+    font-size: 1rem;
     font-weight: bold;
     margin-top: .2rem;
 }
 
-.descricao {
+.descricao-noticia-cartao {
     margin-top: .5rem;
 }
 
-.preco {
-    font-size: 1.5rem;
+.autor-noticia-cartao {
+    font-size: .8rem;
     font-weight: bold;
     color: green;
     text-align: right;
 }
 
-.botao {
+.botao-cartao {
     border: none;
     border-radius: .5rem;
     background-color: blue;
