@@ -188,7 +188,7 @@ margin-top: .5rem;
     text-align: right;
 }
 
-.botao-cartao {
+.botao-cartao{
     max-width: 100%;
     border: none;
     border-radius: .5rem;
@@ -197,9 +197,18 @@ margin-top: .5rem;
     padding: .3rem .5rem;
     margin-top: .5rem;
     font-weight: bold;
+    text-align:center;
+}
+.botao-cartao a {
+    color:#eee;
 }
 
 .botao-cartao:hover{
+    color:white;
+    background-color:  #050577;
+}
+
+.botao-cartao a:hover{
     color:white;
     background-color:  #050577;
 }
@@ -225,4 +234,19 @@ footer {
         display: flex;
         justify-content: center;
     }
+}
+
+.painel{
+    width: 38rem;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.painel-img{
+    width: 38rem;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
 }
