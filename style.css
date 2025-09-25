@@ -87,6 +87,10 @@ nav {
     padding: .7rem;
 }
 
+.menu-oculto{
+    display:none;
+}
+
 li {
     margin-bottom: .7rem;
 }
@@ -200,6 +204,6 @@ footer {
 
     main {
         display: flex;
-
+        justify-content: center;
     }
 }
